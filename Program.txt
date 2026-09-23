@@ -1,0 +1,73 @@
+EffectGlich関数の引数にelementとmText
+
+mTextにはdataset.textの文字列(グリッチする文字)が代入される。
+
+もしglitchedのフラグがtrueだったらreturn;
+
+フラグをtrue
+
+{
+	iがmTextのlengthになるまでiを++しながら繰り返し。
+
+	charはmText[ i ]
+
+	もしcharの文字列が“ ”( 空白 )だったら、
+	currentTextArrayに " "（ 空白 )をpushする。
+
+	そうでなければグリッチの時にだす文字をランダムに代入する。
+}
+
+{
+	iがmTextのlengthになるまでiを++しながら繰り返し。
+	originalCharはmText[ i ]。
+
+	もしoriginalCharが" "( 空白 )だったら、
+	originalTextArrayに" "( 空白 )をpushする。
+	continue;
+	
+	revealStartTimeは i * scramblesPerChar / 2
+	
+	もしiterationがrevealStartTime以上だったら
+	{
+		revealProgressは1以下で、( iteration - revealStartTime ) / ( scramblesPerChar * 2 )。
+		
+		もしMath.randomがrevealProgress以下だったら
+		newTextArrayにoriginalCharをpushする。
+		continue;
+	}
+	
+	randomCharはグリッチ時にだす文字[ グリッチ時にだす文字のlengthのランダム]
+	newTextArrayにrandomCharをpushする。
+}
+
+
+element.textContentはnewTextArray.join( "" )
+もしiterationがtotalIterations以上もじくは、element.textContentがmTextだったら、
+{
+	intervalをclearIntervalする。
+	element.textContentをmTextにする。
+}
+
+iterationを++
+
+mFrame
+
+}
+
+gGlitchを配列で定義
+
+gGlitchはdocument.querySelectorAll( '.glitch-text, .menu-item' )(適応するhtmlのクラスを)
+
+gGlitchの要素に対して、
+もしelement.dateset.glitchedがtrueだったら、
+{
+	return;
+}
+
+triggerScrollYはparseInt( element.dataset.glitchScrollTrigger, 10 )。parseIntの引数は、( 数字に変換したい文字列, 文字列の進数 )
+textToDisplayはelement.dateset.text(表示させる文字)。
+
+もしトリガースクロールがNaNじゃなくて、textToDisplayで、ウィンドウのScrollYが、トリガースクロールより大きかったら
+{
+	EffectGlicthの引数( element,mText )に,( element, textToDisPlayを渡す )
+}

@@ -1,0 +1,468 @@
+/* ========== STYLE.CSS ========== */
+body{
+	background-color: #f2f2f2;
+	transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+/* ========== BACKGROUND CHANGE COLOR ========== */
+body.background-change-one{
+	background-color: #d9dddd;
+}
+
+body.background-change-two{
+		background-color: #cfcfcf;
+}
+
+/*
+						[color]
+						#f2f2f2
+						#d9dddd
+						#cfcfcf
+ */
+
+/* ========== MENU ========== */
+.menu{
+    width: 100%;
+    /*height: 6.5%;*/
+	height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*background: linear-gradient( to bottom, #ffffff, #f2f2f2 );*/
+    background-color: #f2f2f2;
+    z-index: 3;
+    
+box-shadow: 2px -2px 4px 3px #d9ddde;			/* d9d9dde */
+/*3px 3px 10px rgba(255,255,255,0.9) inset;*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-name{
+	top : 15px;
+	left: 30px;
+	font-family: "Bitcount Grid Double", system-ui;
+	font-size: 2.0em;
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	 font-weight: 290;
+	position: fixed;
+	z-index: 4;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li{
+	width: 120px;
+	box-sizing: border-box;
+}
+
+.menu-item{
+	font-family: "Work Sans", sans-serif;
+	font-weight: 210;
+	font-size: 1em;
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	margin-left: 40px;
+	display: block;
+	/*order-left: 1px solid #f2f2f2;*/
+}
+svg{
+	width: 17px;
+	height: 17px;
+	fill: #929292;
+
+	/*					[svg color]
+						#A4A4A4
+						#A1A1A1
+						#9C9C9C
+						#979797
+						#929292
+						#a9a9a9
+*/
+}
+
+/* ========== CONSOLE WINDOW ========== */
+
+.typing-window{
+	position: relative;
+	top: 200px;
+	margin: 0 auto;
+	background-color: #d9dddd;
+	/*padding-left: 15px;*/
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+	width: 1100px;
+	height: 600px;
+	overflow-y: scroll;
+}
+
+.typing-window-menu{
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 6%;
+	background-color: #ffffff;
+	z-index: 2;
+}
+
+.typing-window-menu-item{
+	position: absolute;
+	/*top: -28px;*/
+	/*margin-left: 980px;*/
+	font-size: 28px;
+
+}
+
+.item1{
+	position: absolute;
+	margin-left: 1050px;
+	top: -27px;
+	/*left: 70px;*/
+}
+
+.item2{
+	position: absolute;
+	margin-left: 1005px;
+	top: -13px;
+	font-size: 18px;
+}
+
+.item3{
+	position: absolute;
+	margin-left: 960px;
+	top: -15px;
+	font-size: 20px;
+}
+
+.typing-window-menu-item-1{
+	position: sticky;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+	width: 230px;
+	height: 40px;
+	border-radius: 7px;
+	background-color: #d9dddd;
+}
+
+.item4{
+	position: absolute;
+	margin-left: 10px;
+	top: -5px;
+}
+
+.item5{
+	position: absolute;
+	margin-left: 200px;
+	top: -20px;
+	font-size: 22px;
+}
+
+/*
+.item4{
+	position: absolute;
+	margin-left: 40px;
+	top: -10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+	width: 185px;
+	height: 37px;
+	border-radius: 10px;
+	background-color: #d9dddd;
+}
+
+.item5{
+	position: absolute;
+	margin-left: 200px;
+	top: -20px;
+	font-size: 22px;
+}
+*/
+
+.text-box{
+	/*position: absolute;
+	top: 943px*/
+	left: 33%;;
+	width: 65%;
+	font-size: 1em;
+	font-weight: 90;
+	letter-spacing: 0.5em;
+	color: #ffffff;
+	carete-color: #ffffff;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.hidden{
+	display: none;
+}
+
+.window-video{
+	position: absolute;
+	left: 10px;
+	top: 1500px;
+	width: 200px;
+	height: 350px;
+}
+
+.hidden{
+	display: none;
+}
+
+.type-window-consept-text{
+	position: relative;
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	margin-left: 10px;
+	color: #ffffff;
+	font-weight: 90;
+	font-size: 1em;
+	letter-spacing: 0.5em;
+	line-height: 1;
+}
+
+.glitch-error-text{
+	/*color: #ff0000*/
+}
+
+/* ========== MAIN  ========== */
+
+.main-consept{
+	position: relative;
+	top: 600px;
+	text-align: center;
+	color: #000000;
+	font-weight: 200;
+	font-size: 2em;
+	letter-spacing: 0.5em;
+	line-height: 4;
+}
+
+.main-video{
+	position: relative;
+	top: 900px;
+	background-color: #ff0000;
+}
+
+.main-video1{
+	position: absolute;
+	top: 0px;
+	width: 500px;
+	height: 350px;
+	margin-left: 300px;
+}
+.main-video2{
+	position: absolute;
+	top: 400px;
+	width: 500px;
+	height: 350px;
+	margin-left: 1000px;
+}
+.main-video3{
+	position: absolute;
+	top: 800px;
+	width: 500px;
+	height: 350px;
+	margin-left: 300px;
+}
+.main-video4{
+	position: absolute;
+	top: 1200px;
+	width: 500px;
+	height: 350px;
+	margin-left: 1000px;
+}
+
+/* ========== HAMBURGER MENU ========== */
+
+/*
+.hamburger-menu{
+	
+}
+
+.hamberger-menu .bar{
+	
+}
+*/
+
+/* ========== (MAX-WIDTH 768px) ========== */
+@media (max-width: 768px){
+
+/*
+	body{
+		background-color: #000000;
+	}
+	*/
+
+	/* ========== MENU ========== */
+	.menu{
+	    width: 100%;
+	    /*height: 6.5%;*/
+		height: 70px;
+	    position: fixed;
+	    top: 0px;
+	    left: 0px;
+	    /*background: linear-gradient( to bottom, #ffffff, #f2f2f2 );*/
+	    background-color: #f2f2f2;
+	    z-index: 3;
+	    
+	box-shadow: 2px -2px 4px 3px #d9ddde;			/* d9d9dde */
+	/*3px 3px 10px rgba(255,255,255,0.9) inset;*/
+	    
+	    display: flex;
+	    align-items: center;
+	    justify-content: flex-end;
+	}
+
+	.menu-name{
+		top : 15px;
+		font-family: "Bitcount Grid Double", system-ui;
+		font-size: 1.8em;
+		color: #000000;
+		text-decoration: none;
+		font-style: normal;
+		 font-weight: 290;
+		position: fixed;
+		z-index: 4;
+	}
+
+	.menu ul{
+	    /*list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    display: flex;*/
+		display: none;
+	}
+
+	.menu li{
+		/*width: 120px;
+		box-sizing: border-box;*/
+	}
+
+	.menu-item{
+		/*font-family: "Work Sans", sans-serif;
+		font-weight: 210;
+		font-size: 1em;
+		color: #000000;
+		text-decoration: none;
+		font-style: normal;*/
+		margin-left: 0px;
+		/*display: block;
+		border-left: 1px solid #f2f2f2;*/
+	}
+	svg{
+		/*width: 17px;
+		height: 17px;
+		fill: #929292;*/
+
+		/*
+		#A4A4A4
+		#A1A1A1
+		#9C9C9C
+		#979797
+		#929292
+		
+		#a9a9a9
+		*/
+	}
+
+	/* ========== CONSOLE WINDOW ========== */
+	.typing-window{
+		position: relative;
+		top: 200px;
+		/*margin: 0 auto;*/
+		left: -2%;
+		background-color: #d9dddd;
+		/*padding-left: 15px;*/
+		/*border-radius: 10px;*/
+		border: 2px solid #ffffff;
+		box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+		width: 300px;
+		height: 200px;
+		overflow-y: scroll;
+	}
+
+	.typing-window-menu{
+		position: sticky;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 6%;
+		background-color: #ffffff;
+		z-index: 2;
+	}
+
+	.text-box{
+		/*position: absolute;
+		top: 943px*/
+		/*left: 33%;;
+		width: 65%;
+		font-size: 1em;
+		font-weight: 90;
+		letter-spacing: 0.5em;
+		color: #ffffff;
+		carete-color: #ffffff;
+		border: none;
+		outline: none;
+		background: transparent;*/
+		display: none;
+	}
+
+	.hidden{
+		display: none;
+	}
+
+	.window-video{
+		position: absolute;
+		left: 10px;
+		top: 1500px;
+		width: 200px;
+		height: 350px;
+	}
+
+	.hidden{
+		display: none;
+	}
+
+	.type-window-consept-text{
+		position: relative;
+		font-family: "Zen Kaku Gothic New", sans-serif;
+		margin-left: 10px;
+		color: #ffffff;
+		font-weight: 90;
+		font-size: 0.6em;
+		letter-spacing: 0.5em;
+		line-height: 1;
+	}
+
+	.glitch-error-text{
+		/*color: #ff0000*/
+	}
+
+	/* ========== MAIN CONSEPT ========== */
+
+	.main-consept{
+		position: relative;
+		top: 600px;
+		text-align: center;
+		color: #000000;
+		font-weight: 200;
+		font-size: 0.7em;
+		letter-spacing: 0.5em;
+		line-height: 4;
+	}
+}
